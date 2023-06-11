@@ -33,7 +33,7 @@ ALTER TABLE employee CHARACTER SET utf8
 > 列名name修改为user_name
 ``` sql 
 ALTER TABLE employee 
- 	CHANGE "name" "user_name" VARCHAR(64) NOT NULL DEFAULT ''
+ 	CHANGE "name" "user_name" VARCHAR(64) NOT NULL DEFAULT " "
  	
  DESC employee
 ``` 

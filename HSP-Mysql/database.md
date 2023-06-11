@@ -34,5 +34,5 @@ CREATE DATABASE hsp_db03 CHARACTER SET utf8 COLLATE utf8_bin
 ``` sql
 SELECT *  
 	FROM t1 
-	WHERE NAME = 'tom'
+	WHERE NAME = "tom"
 ``` 

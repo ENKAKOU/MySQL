@@ -9,7 +9,7 @@ SHOW DATABASES
 > 查看前面创建的hsp_db01数据库的定义信息
 >
 ``` sql 
-SHOW CREATE DATABASE `hsp_db01`
+SHOW CREATE DATABASE "hsp_db01"
 ``` 
 
 > 删除前面创建的hsp_db01数据库
