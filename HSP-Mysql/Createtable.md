@@ -13,11 +13,9 @@
 >
 > job:  字符型;    
 >
-> Salary:  小数型
+> Salary:  小数型;
 >
-> resume:  文本型
->
-> 自己一定要练习一把
+> resume:  文本型;
 >
 ``` sql 
 CREATE TABLE "emp" (
@@ -30,6 +28,7 @@ CREATE TABLE "emp" (
 	salary DOUBLE,
 	"resume" TEXT) CHARSET utf8 COLLATE utf8_bin ENGINE INNODB;
 ``` 
+
 > 添加一条
 >
 ``` sql 
