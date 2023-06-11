@@ -11,4 +11,3 @@ CREATE TABLE t14 (
 SELECT * FROM t14;
 INSERT INTO t14(birthday, job_time) 
 	VALUES('2022-11-11','2022-11-11 10:10:10');
--- 如果我们更新 t14表的某条记录，login_time列会自动的以当前时间进行更新
