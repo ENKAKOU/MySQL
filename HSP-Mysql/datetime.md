@@ -1,6 +1,7 @@
-#时间相关的类型
-#创建一张表, date , datetime , timestamp
-
+# 时间相关的类型
+> 创建一张表, date , datetime , timestamp
+>
+``` sql 
 CREATE TABLE t14 (
 	birthday DATE , -- 生日
 	job_time DATETIME, -- 记录年月日 时分秒
@@ -11,3 +12,4 @@ CREATE TABLE t14 (
 SELECT * FROM t14;
 INSERT INTO t14(birthday, job_time) 
 	VALUES('2022-11-11','2022-11-11 10:10:10');
+``` 

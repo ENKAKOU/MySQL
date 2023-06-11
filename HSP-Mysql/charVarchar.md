@@ -13,7 +13,6 @@
 >
 > 如果表的编码是 gbk varchar(size) size = (65535-3) / 2 = 32766
 >
-
 ``` sql 
 CREATE TABLE t09 (
 	`name` CHAR(255));

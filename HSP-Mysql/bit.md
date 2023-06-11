@@ -8,7 +8,6 @@
 > 3.显示按照bit 
 >
 > 4.查询时，仍然可以按照数来查询
-
 ``` sql 
 CREATE TABLE t05 (num BIT(8));
 INSERT INTO t05 VALUES(255); 
