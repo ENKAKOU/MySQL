@@ -30,7 +30,7 @@ CREATE DATABASE hsp_db03 CHARACTER SET utf8 COLLATE utf8_bin
 >
 > 下面是一条查询的sql , select 查询 * 表示所有字段 FROM 从哪个表
 >
-> WHERE 从哪个字段 NAME = 'tom' 查询名字是tom
+> WHERE 从哪个字段 NAME = "tom" 查询名字是tom
 >
 ``` sql
 SELECT *  
