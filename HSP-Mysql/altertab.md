@@ -1,8 +1,10 @@
 # 修改表的操作练习
 > 员工表emp的上增加一个image列，varchar类型(要求在resume后面)。
 
-`ALTER TABLE emp ADD image VARCHAR(32) NOT NULL DEFAULT ""
-AFTER RESUME DESC employee -- 显示表结构，可以查看表的所有列`
+``` sql 
+ALTER TABLE emp ADD image VARCHAR(32) NOT NULL DEFAULT ""
+AFTER RESUME DESC employee -- 显示表结构，可以查看表的所有列
+```
  
  - 修改job列，使其长度为60。
  ALTER TABLE emp 
