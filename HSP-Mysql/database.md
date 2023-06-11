@@ -5,6 +5,7 @@
 CREATE DATABASE hsp_db01;
 #删除数据库指令
 DROP DATABASE hsp_db01
+
 #创建一个使用utf8字符集的hsp_db02数据库
 CREATE DATABASE hsp_db02 CHARACTER SET utf8
 #创建一个使用utf8字符集，并带校对规则的hsp_db03数据库
