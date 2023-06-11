@@ -15,19 +15,30 @@ ALTER TABLE emp
  	MODIFY job VARCHAR(60) NOT NULL DEFAULT " " 
 ```
  	
- - 删除sex列。
+> 删除sex列。
+
+``` sql 
  ALTER TABLE emp
  	DROP sex
+``` 
  	
- - 表名改为employee。
- RENAME TABLE emp TO employee
+> 表名改为employee。
+
+``` sql 
+RENAME TABLE emp TO employee
+``` 
  
- - 修改表的字符集为utf8 
- ALTER TABLE employee CHARACTER SET utf8
+> 修改表的字符集为utf8 
+
+``` sql 
+ALTER TABLE employee CHARACTER SET utf8
+``` 
  
- -  列名name修改为user_name
- ALTER TABLE employee 
+> 列名name修改为user_name
+
+``` sql 
+ALTER TABLE employee 
  	CHANGE "name" "user_name" VARCHAR(64) NOT NULL DEFAULT ''
  	
  DESC employee
-
+``` 
