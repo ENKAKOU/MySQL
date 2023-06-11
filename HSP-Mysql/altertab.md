@@ -1,4 +1,4 @@
-#修改表的操作练习
+# 修改表的操作练习
 --  员工表emp的上增加一个image列，varchar类型(要求在resume后面)。
 
 ALTER TABLE emp 
