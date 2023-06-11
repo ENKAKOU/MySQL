@@ -1,13 +1,21 @@
 # 创建表的课堂练习
-> 字段:属性;      Id:整形
+> 字段:  属性;      
 >
-> name:字符型;   sex:字符型
+>Id:  整形
 >
-> brithday:日期型（date）;    entry_date:日期型   (date)
+> name:  字符型;   
 >
-> job:字符型;    Salary:小数型
+> sex:  字符型
 >
-> resume:文本型
+> brithday:  日期型（date）;    
+>
+> entry_date:  日期型(date)
+>
+> job:  字符型;    
+>
+> Salary:  小数型
+>
+> resume:  文本型
 >
 > 自己一定要练习一把
 >
