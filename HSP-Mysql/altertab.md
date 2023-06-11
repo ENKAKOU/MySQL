@@ -8,9 +8,12 @@ ALTER TABLE emp
 DESC employee -- 显示表结构，可以查看表的所有列
 ```
  
- - 修改job列，使其长度为60。
- ALTER TABLE emp 
- 	MODIFY job VARCHAR(60) NOT NULL DEFAULT ''
+> 修改job列，使其长度为60。
+
+``` sql 
+ALTER TABLE emp 
+ 	MODIFY job VARCHAR(60) NOT NULL DEFAULT " " 
+```
  	
  - 删除sex列。
  ALTER TABLE emp
