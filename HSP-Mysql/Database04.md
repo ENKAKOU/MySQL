@@ -1,4 +1,5 @@
-# 这是一个ecshop 的数据库，包括ecshop 所有的表，请导入到mysql数据库中[备份]
+# 这是一个ecshop 的数据库，包括ecshop 所有的表，请导入到mysql数据库中
+
 > 进入到mysql命令行: source ecshop备份文件路径
 > 
 > 再将ecshop整个数据库备份到你的 d:\\ecshop.sql到dos 下 : 

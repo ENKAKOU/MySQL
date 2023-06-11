@@ -1,6 +1,7 @@
 # 字符串类型使用char varchar
-> 注释的快捷键 shift+ctrl+c , 注销注释 shift+ctrl+r
 
+> 注释的快捷键 shift+ctrl+c , 注销注释 shift+ctrl+r
+>
 > CHAR(size)
 >
 > 固定长度字符串 最大255 字符 

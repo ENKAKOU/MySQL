@@ -1,4 +1,5 @@
 # 时间相关的类型
+
 > 创建一张表, date , datetime , timestamp
 >
 ``` sql 
