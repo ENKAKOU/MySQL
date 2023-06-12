@@ -77,7 +77,7 @@ SELECT AVG(math) FROM student;
 SELECT AVG(math + english + chinese) FROM student;
 ```
 
-# 演示max 和 min的使用
+# max 和 min的使用
 
 > 求班级最高分和最低分（数值范围在统计中特别有用）
 >
