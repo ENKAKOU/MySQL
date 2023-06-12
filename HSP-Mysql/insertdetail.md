@@ -28,7 +28,7 @@ INSERT INTO "goods" (id, goods_name, price)
 	VALUES(40, vivo手机, 3000); -- 错误的 vivo手机 应该 "vivo手机"
 ``` 
 	
-> 列可以插入空值[该字段允许为空]，insert into table value(null)
+> 列可以插入空值[该字段允许为空]，insert into table value(null);
 >
 ``` sql 
 INSERT INTO "goods" (id, goods_name, price) 

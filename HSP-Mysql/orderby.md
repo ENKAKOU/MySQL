@@ -1,13 +1,13 @@
 # order by使用
 
-> 对数学成绩排序后输出【升序】
+> 对数学成绩排序后输出【升序】;
 >
 ``` sql
 SELECT * FROM student 
 	ORDER BY math;
 ```
 
-> 对总分按从高到低的顺序输出 [降序] -- 使用别名排序
+> 对总分按从高到低的顺序输出 [降序] -- 使用别名排序;
 >
 ``` sql
 SELECT "name" , (chinese + english + math) AS total_score FROM student 
