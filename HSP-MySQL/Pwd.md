@@ -34,8 +34,6 @@ SELECT * FROM hsp_user  -- SQL注入问题
 	WHERE "name"= "韩顺平" AND pwd = MD5("hsp")  
 ```
 
-
-
 >PASSWORD(str) -- 加密函数, MySQL数据库的用户密码就是 PASSWORD函数加密
 >
 ```sql
