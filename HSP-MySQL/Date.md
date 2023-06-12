@@ -63,12 +63,12 @@ SELECT DATEDIFF("2011-11-11", "1990-01-01") FROM DUAL;
 > 用mysql 的sql语句求出活了多少天?  例如： 1986-11-11 出生
 >
 ```sql
-SELECT DATEDIFF(NOW(), '1986-11-11') FROM DUAL;
+SELECT DATEDIFF(NOW(), "1986-11-11") FROM DUAL;
 ```
 
-> 如果能活80岁，求出还能活多少天.例如： 1986-11-11 出生
+> 如果能活80岁，求出还能活多少天;  例如： 1986-11-11 出生
 >
-> 先求出活80岁 时, 是什么日期 X;  然后在使用 datediff(x, now());  1986-11-11->datetime
+> 先求出活80岁时,是什么日期 X;  然后在使用 datediff(x, now());  1986-11-11->datetime
 >
 > INTERVAL 80 YEAR ： YEAR 可以是 年月日，时分秒
 >
