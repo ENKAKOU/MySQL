@@ -4,27 +4,27 @@
 >
 >使用指令创建数据库;
 >
-``` sql 
+```sql
 CREATE DATABASE hsp_db01;
-``` 
+```
 
 > 删除数据库指令;
 >
-``` sql 
+```sql
 DROP DATABASE hsp_db01
-``` 
+```
 
 > 创建一个使用utf8字符集的hsp_db02数据库;
 >
-``` sql 
+```sql
 CREATE DATABASE hsp_db02 CHARACTER SET utf8
-``` 
+```
 
 > 创建一个使用utf8字符集，并带校对规则的hsp_db03数据库;
 >
-``` sql 
+```sql
 CREATE DATABASE hsp_db03 CHARACTER SET utf8 COLLATE utf8_bin
-``` 
+```
 
 > 校对规则 utf8_bin 区分大小 默认utf8_general_ci 不区分大小写;
 >
@@ -32,8 +32,8 @@ CREATE DATABASE hsp_db03 CHARACTER SET utf8 COLLATE utf8_bin
 >
 > WHERE 从哪个字段 NAME = "tom" 查询名字是tom;
 >
-``` sql
+```sql
 SELECT *  
 	FROM t1 
 	WHERE NAME = "tom"
-``` 
+```

@@ -67,7 +67,7 @@ SELECT * FROM student
 >
 ```sql
 SELECT * FROM student 
-	WHERE `name` LIKE '李%'
+	WHERE "name" LIKE '李%'
 ```
 
 > 查询数学分>80，语文分>80的同学

@@ -8,7 +8,8 @@
 >
 > 如果指定 unsinged , 则TINYINT就是无符号 0-255
 >
-``` sql 
+
+```sql
 CREATE TABLE t3 (
 	id TINYINT);
 CREATE TABLE t4 (

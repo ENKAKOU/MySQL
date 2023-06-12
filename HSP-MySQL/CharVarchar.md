@@ -14,7 +14,7 @@
 >
 > 如果表的编码是 gbk varchar(size) size = (65535-3) / 2 = 32766
 >
-``` sql 
+```sql
 CREATE TABLE t09 (
 	"name" CHAR(255));
 
@@ -22,5 +22,4 @@ CREATE TABLE t10 (
 	"name" VARCHAR(32766)) CHARSET gbk;
 
 DROP TABLE t10;
-``` 
-
+```

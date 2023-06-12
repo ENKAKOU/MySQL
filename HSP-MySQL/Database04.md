@@ -4,7 +4,7 @@
 > 
 > 再将ecshop整个数据库备份到你的 d:\\ecshop.sql到dos 下 : 
 >
-``` sql 
+```sql
 mysqldump -u root -p -B ecshop > d:\\ecshop.sql
 ```
 
@@ -12,6 +12,6 @@ mysqldump -u root -p -B ecshop > d:\\ecshop.sql
 >
 > 进入mysql命令行;
 >
-``` sql 
+```sql
 source d:\\ecshop.sql
-``` 
+```
