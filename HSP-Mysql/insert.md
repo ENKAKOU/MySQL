@@ -1,4 +1,4 @@
-# 练习insert 语句
+# insert 语句
 
 > 创建一张商品表goods (id  int , goods_name varchar(10), price double );
 >
