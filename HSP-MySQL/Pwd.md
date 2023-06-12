@@ -24,7 +24,7 @@ SELECT LENGTH(MD5("hsp")) FROM DUAL;
 ```sql
 CREATE TABLE hsp_user
 	(id INT , 
-	`name` VARCHAR(32) NOT NULL DEFAULT " ", 
+	"name" VARCHAR(32) NOT NULL DEFAULT " ", 
 	pwd CHAR(32) NOT NULL DEFAULT " ");
 INSERT INTO hsp_user 
 	VALUES(100, "韩顺平", MD5("hsp"));
