@@ -1,6 +1,6 @@
 # 数学相关函数
 
-> ABS(num)	绝对值
+> ABS(num)绝对值
 >
 ```sql
 SELECT ABS(-10) FROM DUAL;
