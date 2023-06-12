@@ -4,7 +4,7 @@
 >
 ```sql
 SELECT * FROM student 
-	WHERE `name` = '赵云'
+	WHERE "name" = "赵云"
 ```
 
 > 查询英语成绩大于90分的同学
@@ -42,7 +42,7 @@ SELECT * FROM student
 ```sql
 SELECT * FROM student
 	WHERE (chinese + english + math) > 200 AND 
-		math < chinese AND `name` LIKE '赵%'
+		math < chinese AND "name" LIKE "赵%"
 ```
 			
 > 查询英语分数在 80－90之间的同学。
@@ -67,7 +67,7 @@ SELECT * FROM student
 >
 ```sql
 SELECT * FROM student 
-	WHERE "name" LIKE '李%'
+	WHERE "name" LIKE "李%"
 ```
 
 > 查询数学分>80，语文分>80的同学

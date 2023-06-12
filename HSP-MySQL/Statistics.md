@@ -26,9 +26,9 @@ SELECT COUNT(*) FROM student
 
 CREATE TABLE t15 (
 	"name" VARCHAR(20));
-INSERT INTO t15 VALUES('tom');
-INSERT INTO t15 VALUES('jack');
-INSERT INTO t15 VALUES('mary');
+INSERT INTO t15 VALUES("tom");
+INSERT INTO t15 VALUES("jack");
+INSERT INTO t15 VALUES("mary");
 INSERT INTO t15 VALUES(NULL);
 SELECT * FROM t15;
 
@@ -37,32 +37,58 @@ SELECT COUNT("name") FROM t15;-- 3"`"
 
 ```
 
-
--- 演示sum函数的使用
--- 统计一个班级数学总成绩？
+> 演示sum函数的使用
+> 统计一个班级数学总成绩？
 SELECT SUM(math) FROM student;
--- 统计一个班级语文、英语、数学各科的总成绩
+
+
+> 统计一个班级语文、英语、数学各科的总成绩
+>
+```sql
 SELECT SUM(math) AS math_total_score,SUM(english),SUM(chinese) FROM student;
--- 统计一个班级语文、英语、数学的成绩总和
+```
+
+> 统计一个班级语文、英语、数学的成绩总和
+>
+```sql
 SELECT SUM(math + english + chinese) FROM student;
--- 统计一个班级语文成绩平均分
+```
+
+> 统计一个班级语文成绩平均分
+>
+```sql
 SELECT SUM(chinese)/ COUNT(*)  FROM student;
 SELECT SUM(`name`) FROM student;
+```
 
--- 演示avg的使用
--- 练习：
--- 求一个班级数学平均分？
+
+
+# avg的使用
+
+> 练习：求一个班级数学平均分？
+>
+```sql
 SELECT AVG(math) FROM student;
--- 求一个班级总分平均分
-SELECT AVG(math + english + chinese) FROM student;
+```
 
--- 演示max 和 min的使用
--- 求班级最高分和最低分（数值范围在统计中特别有用）
+> 求一个班级总分平均分;
+>
+```sql
+SELECT AVG(math + english + chinese) FROM student;
+```
+
+# 演示max 和 min的使用
+
+> 求班级最高分和最低分（数值范围在统计中特别有用）
+>
+```sql
 SELECT MAX(math + english + chinese), MIN(math + english + chinese) 
 	FROM student;
+```
 
--- 求出班级数学最高分和最低分
+> 求出班级数学最高分和最低分
+>
+```sql
 SELECT MAX(math) AS math_high_socre, MIN(math)  AS math_low_socre
 	FROM student;
-
-
+```
