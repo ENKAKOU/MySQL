@@ -27,7 +27,7 @@ SELECT COUNT(*), COUNT(*) - COUNT(comm)    -- 第2种写法
 	FROM emp 
 ```
 
-> 3.显示管理者的总人数。小技巧:尝试写->修改->尝试  [正确的]
+> 3.显示管理者的总人数。(技巧:尝试写->修改->尝试) 
 >
 ```sql
 SELECT COUNT(DISTINCT mgr) 
