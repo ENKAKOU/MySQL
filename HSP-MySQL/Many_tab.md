@@ -15,7 +15,7 @@ select * from dept;
 select * from salgrade;
 ```
 
-> 如何显示部门号为10的部门名、员工名和工资;  <br>
+> 显示部门号为10的部门名、员工名和工资;  <br>
 ```sql
 SELECT ename,sal,dname,emp.deptno
 	FROM emp, dept 
