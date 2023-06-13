@@ -44,14 +44,14 @@ loc VARCHAR(13) NOT NULL DEFAULT ""
 > 创建表EMP雇员;  <br>
 ```sql
 CREATE TABLE emp
-(empno  MEDIUMINT UNSIGNED  NOT NULL  DEFAULT 0, /*编号*/
-ename VARCHAR(20) NOT NULL DEFAULT "", /*名字*/
-job VARCHAR(9) NOT NULL DEFAULT "",/*工作*/
-mgr MEDIUMINT UNSIGNED NOT NULL DEFAULT 0,/*上级编号*/
-hiredate DATE NOT NULL,/*入职时间*/
-sal DECIMAL(7,2)  NOT NULL,/*薪水*/
-comm DECIMAL(7,2) NOT NULL,/*红利*/
-deptno MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 /*部门编号*/
+(empno  MEDIUMINT UNSIGNED  NOT NULL  DEFAULT 0,    /*编号*/
+ename VARCHAR(20) NOT NULL DEFAULT "",    /*名字*/
+job VARCHAR(9) NOT NULL DEFAULT "",   /*工作*/
+mgr MEDIUMINT UNSIGNED NOT NULL DEFAULT 0,   /*上级编号*/
+hiredate DATE NOT NULL,   /*入职时间*/
+sal DECIMAL(7,2)  NOT NULL,   /*薪水*/
+comm DECIMAL(7,2) NOT NULL,   /*红利*/
+deptno MEDIUMINT UNSIGNED NOT NULL DEFAULT 0    /*部门编号*/
 ) ;
 ```
 
