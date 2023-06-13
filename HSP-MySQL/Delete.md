@@ -1,12 +1,12 @@
 # delete 语句
 
-> 删除表中名称为 "老妖怪" 的记录。  <br>
+> 删除表中名称为 "老妖怪" 的记录;  <br>
 ```sql
 DELETE FROM employee 
 	WHERE user_name = "老妖怪";
 ```
 	
-> 删除表中所有记录(一定要小心)  <br>
+> 删除表中所有记录(一定要小心);  <br>
 ```sql
 DELETE FROM employee;
 ```

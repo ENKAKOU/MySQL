@@ -1,4 +1,4 @@
-> 部门表  <br>
+> 部门表;  <br>
 ```sql
 CREATE TABLE dept(
 deptno MEDIUMINT   UNSIGNED  NOT NULL  DEFAULT 0, 
@@ -28,7 +28,7 @@ deptno MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 /*部门编号*/
 );
 ```
 
-> 添加测试数据  <br>
+> 添加测试数据;  <br>
 ```sql
 INSERT INTO emp VALUES(7369, "SMITH", "CLERK", 7902, "1990-12-17", 800.00,NULL , 20), 
 (7499, "ALLEN", "SALESMAN", 7698, "1991-2-20", 1600.00, 300.00, 30),  
@@ -72,7 +72,7 @@ SELECT * FROM emp;
 
 
 
-# 演示group by + having
+# group by + having
 
 > GROUP by用于对查询的结果分组统计,   <br>
 > - having子句用于限制分组显示结果.  <br>
@@ -83,14 +83,14 @@ SELECT AVG(sal), MAX(sal) , deptno
 	FROM  emp GROUP BY deptno; 
 ```
 
-> 使用数学方法，对小数点进行处理   <br>
+> 使用数学方法，对小数点进行处理;  <br>
 >
 ```sql
 SELECT FORMAT(AVG(sal),2), MAX(sal) , deptno 
 	FROM  emp GROUP BY deptno; 
 ```
 
-> 显示每个部门的每种岗位的平均工资和最低工资   <br>
+> 显示每个部门的每种岗位的平均工资和最低工资;  <br>
 > - 1.显示每个部门的平均工资和最低工资   <br>
 > - 2.显示每个部门的每种岗位的平均工资和最低工资   <br>
 
@@ -99,7 +99,7 @@ SELECT AVG(sal), MIN(sal) , deptno, job
 	FROM  emp GROUP BY deptno, job; 
 ```
 
-> 显示平均工资低于2000的部门号和它的平均工资 // 别名
+> 显示平均工资低于2000的部门号和它的平均工资 // 别名;  <br>
 > - 1.显示各个部门的平均工资和部门号  <br>
 > - 2.在1的结果基础上，进行过滤，保留 AVG(sal) < 2000  <br>
 > - 3.使用别名进行过滤   <br>
@@ -109,7 +109,7 @@ SELECT AVG(sal), deptno
 		HAVING AVG(sal) < 2000;
 ```
 
-> 使用别名  <br>
+> 使用别名;  <br>
 ```sql
 SELECT AVG(sal) AS avg_sal, deptno 
 	FROM emp GROUP BY deptno

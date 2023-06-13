@@ -1,13 +1,13 @@
 # 增强group by的使用
 
-> 1.显示每种岗位的雇员总数、平均工资。  <br>
+> 1.显示每种岗位的雇员总数、平均工资;  <br>
 ```sql
 SELECT COUNT(*), AVG(sal), job 
 	FROM emp 
 	GROUP BY job; 
 ```
 
-> 2.显示雇员总数，以及获得补助的雇员数。  <br>
+> 2.显示雇员总数，以及获得补助的雇员数;  <br>
 > - 获得补助的雇员数 就是 comm 列为非null, 就是count(列)，如果该列的值为null  <br>
 ```sql
 SELECT COUNT(*), COUNT(comm)
@@ -23,13 +23,13 @@ SELECT COUNT(*), COUNT(*) - COUNT(comm)    -- 第2种写法
 	FROM emp 
 ```
 
-> 3.显示管理者的总人数。(技巧:尝试写->修改->尝试)   <br>
+> 3.显示管理者的总人数。(技巧:尝试写->修改->尝试);  <br>
 ```sql
 SELECT COUNT(DISTINCT mgr) 
 	FROM emp; 
 ```
 
-> 4.显示雇员工资的最大差额。  max(sal) - min(sal)  <br>
+> 4.显示雇员工资的最大差额。  max(sal) - min(sal);  <br>
 ```sql
 SELECT MAX(sal) - MIN(sal) 
 	FROM emp;
