@@ -6,7 +6,7 @@ CREATE TABLE my_class (
 	id INT PRIMARY KEY ,    -- 班级编号
 	`name` VARCHAR(32) NOT NULL DEFAULT '');
 ```
-d
+
 > 创建 从表 my_stu;  <br>
 ```sql
 CREATE TABLE my_stu (
