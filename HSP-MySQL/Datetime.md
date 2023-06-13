@@ -1,7 +1,6 @@
 # 时间相关的类型
 
-> 创建一张表, date , datetime , timestamp;
->
+> 创建一张表, date , datetime , timestamp;  <br> 
 ```sql
 CREATE TABLE t14 (
 	birthday DATE , -- 生日

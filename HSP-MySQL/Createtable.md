@@ -1,23 +1,14 @@
 # 创建表的课堂练习
 
-> 字段:  属性;      
->
->Id:  整形
->
-> name:  字符型;   
->
-> sex:  字符型
->
-> brithday:  日期型（date）;    
->
-> entry_date:  日期型(date)
->
-> job:  字符型;    
->
-> Salary:  小数型;
->
-> resume:  文本型;
->
+> 字段:  属性;  <br> 
+> - Id:  整形 <br>
+> - name:  字符型; <br>
+> - sex:  字符型;  <br>
+> - brithday:  日期型（date）;  <br>
+> - entry_date:  日期型(date);  <br>
+> - job:  字符型;  <br>
+> - Salary:  小数型;   <br>
+> - resume:  文本型;  <br>
 ```sql
 CREATE TABLE "emp" (
 	id INT,

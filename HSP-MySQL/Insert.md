@@ -1,9 +1,7 @@
 # insert 语句
 
-> 创建一张商品表goods (id  int , goods_name varchar(10), price double );
->
-> 添加2条记录
->
+> 创建一张商品表goods (id  int , goods_name varchar(10), price double );  <br>
+> 添加2条记录  <br>
 ```sql
 CREATE TABLE "goods" (
 	id INT ,
@@ -11,8 +9,7 @@ CREATE TABLE "goods" (
 	price DOUBLE NOT NULL DEFAULT 100 );
 ```
 
-> 添加数据
->
+> 添加数据  <br>
 ```sql
 INSERT INTO "goods" (id, goods_name, price) 
 	VALUES(10, "华为手机", 2000);

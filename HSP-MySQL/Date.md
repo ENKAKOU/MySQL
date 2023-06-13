@@ -1,5 +1,4 @@
-> 日期时间相关函数
->
+> 日期时间相关函数  <br> 
 ```sql
 -- CURRENT_DATE (  )	当前日期
 SELECT CURRENT_DATE() FROM DUAL;
@@ -9,8 +8,7 @@ SELECT CURRENT_TIME()  FROM DUAL;
 SELECT CURRENT_TIMESTAMP()  FROM DUAL;
 ```
 
-> 创建测试表 信息表
->
+> 创建测试表 信息表  <br> 
 ```sql
 CREATE TABLE mes(
 	id INT , 
@@ -19,8 +17,7 @@ CREATE TABLE mes(
 ```
 
 
-> 添加一条记录
->
+> 添加一条记录  <br> 
 ```sql
 INSERT INTO mes 
 	VALUES(1, '北京新闻', CURRENT_TIMESTAMP()); 
@@ -35,15 +32,13 @@ SELECT NOW() FROM DUAL;
 
 # 应用实例
 
-> 显示所有新闻信息，发布日期只显示日期，不用显示时间.
->
+> 显示所有新闻信息，发布日期只显示日期，不用显示时间.  <br> 
 ```sql
 SELECT id, content, DATE(send_time) 
 	FROM mes;
 ```
 
-> 请查询在10分钟内发布的新闻, 思路一定要梳理一下.
->
+> 请查询在10分钟内发布的新闻, 思路一定要梳理一下.  <br> 
 ```sql
 SELECT * 
 	FROM mes
@@ -54,26 +49,21 @@ SELECT *
 	WHERE send_time >= DATE_SUB(NOW(), INTERVAL 10 MINUTE) 
 ```
 
-> 在mysql 的sql语句中求出 2011-11-11 和 1990-1-1 相差多少天
->
+> 在mysql 的sql语句中求出 2011-11-11 和 1990-1-1 相差多少天  <br> 
 ```sql
 SELECT DATEDIFF("2011-11-11", "1990-01-01") FROM DUAL;
 ```
 
-> 用mysql 的sql语句求出活了多少天?  例如： 1986-11-11 出生
->
+> 用mysql 的sql语句求出活了多少天?  例如： 1986-11-11 出生  <br> 
 ```sql
 SELECT DATEDIFF(NOW(), "1986-11-11") FROM DUAL;
 ```
 
-> 如果能活80岁，求出还能活多少天;  例如： 1986-11-11 出生
->
-> 先求出活80岁时,是什么日期 X;  然后在使用 datediff(x, now());  1986-11-11->datetime
->
-> INTERVAL 80 YEAR ： YEAR 可以是 年月日，时分秒
->
-> '1986-11-11' 可以date,datetime timestamp 
->
+> 如果能活80岁，求出还能活多少天;  例如： 1986-11-11 出生  <br> 
+> - 先求出活80岁时,是什么日期 X;  然后在使用 datediff(x, now());  1986-11-11->datetime  <br> 
+> - INTERVAL 80 YEAR ： YEAR 可以是 年月日，时分秒  <br> 
+> - '1986-11-11' 可以date,datetime timestamp   <br> 
+
 ```sql
 SELECT DATEDIFF(DATE_ADD("1986-11-11", INTERVAL 80 YEAR), NOW()) 
 	FROM DUAL;
@@ -87,18 +77,14 @@ SELECT DAY(NOW()) FROM DUAL;
 SELECT MONTH("2013-11-10") FROM DUAL;
 ```
 
-> unix_timestamp() : 返回的是1970-1-1 到现在的秒数
->
+> unix_timestamp() : 返回的是1970-1-1 到现在的秒数  <br>
 ```sql
 SELECT UNIX_TIMESTAMP() FROM DUAL;
 ```
 
-> FROM_UNIXTIME() : 可以把一个unix_timestamp 秒数[时间戳]，转成指定格式的日期
->
-> %Y-%m-%d 格式是规定好的，表示年月日
->
-> 意义：在开发中，可以存放一个整数，然后表示时间，通过FROM_UNIXTIME转换
->   
+> FROM_UNIXTIME() : 可以把一个unix_timestamp 秒数[时间戳]，转成指定格式的日期  <br>
+> - %Y-%m-%d 格式是规定好的，表示年月日  <br>
+> - 意义：在开发中，可以存放一个整数，然后表示时间，通过FROM_UNIXTIME转换  <br>   
 ```sql
 SELECT FROM_UNIXTIME(1618483484, "%Y-%m-%d") FROM DUAL;
 SELECT FROM_UNIXTIME(1618483100, "%Y-%m-%d %H:%i:%s") FROM DUAL;

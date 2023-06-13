@@ -1,7 +1,6 @@
 # decimal类型、float、double使用
 
-> 创建表
->
+> 创建表  <br>
 ```sql
 CREATE TABLE t06 (
 	num1 FLOAT,
@@ -9,15 +8,13 @@ CREATE TABLE t06 (
 	num3 DECIMAL(30,20));
 ```
 	
-> 添加数据
->
+> 添加数据  <br>
 ```sql
 INSERT INTO t06 VALUES(88.12345678912345, 88.12345678912345,88.12345678912345);
 SELECT * FROM t06;
 ```
 
-> decimal可以存放很大的数
->
+> decimal可以存放很大的数  <br>
 ```sql
 CREATE TABLE t07 (
 	num DECIMAL(65));

@@ -18,41 +18,36 @@ SELECT * FROM emp
 >
 ```sql
 SELECT ename, sal FROM emp
-	WHERE ename LIKE 'S%'
+	WHERE ename LIKE "S%"
 ```
 
 > 显示第三个字符为大写O的所有员工的姓名和工资
 >
 ```sql
 SELECT ename, sal FROM emp
-	WHERE ename LIKE '__O%'
+	WHERE ename LIKE "__O%"
 ```
 
 
-> ■ 如何显示没有上级的雇员的情况
->
+> ■ 如何显示没有上级的雇员的情况;  <br>
 ```sql
 SELECT * FROM emp
 	WHERE mgr IS NULL;
 ```
 
-> ■ 查询表结构 
->
+> ■ 查询表结构;  <br>
 ```sql
 DESC emp 
 ```
 
-> 使用order by子句
->
-> 按照工资的从低到高的顺序[升序]，显示雇员的信息
->
+> 使用order by子句;  <br>
+> - 按照工资的从低到高的顺序[升序]，显示雇员的信息;  <br>
 ```sql
 SELECT * FROM emp
 	ORDER BY sal 
 ```
 
-> 按照部门号升序而雇员的工资降序排列 , 显示雇员信息
->
+> 按照部门号升序而雇员的工资降序排列 , 显示雇员信息;  <br>
 ```sql
 SELECT * FROM emp
 	ORDER BY deptno ASC , sal DESC;
