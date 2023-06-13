@@ -1,10 +1,10 @@
 # Mysql 多表查询
 
 > 显示雇员名,雇员工资及所在部门的名字 【笛卡尔集】
->> 雇员名,雇员工资 来自 emp表
->> 部门的名字 来自 dept表
->> 需求对 emp 和 dept查询  ename,sal,dname,deptno
->> 当我们需要指定显示某个表的列是，需要 表.列表
+> - 雇员名,雇员工资 来自 emp表 <br>
+> - 部门的名字 来自 dept表 <br>
+> - 需求对 emp 和 dept查询  ename,sal,dname,deptno <br>
+> - 当我们需要指定显示某个表的列是，需要 表.列表 <br>
 >
 ```sql
 ```
