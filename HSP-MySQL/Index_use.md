@@ -53,10 +53,21 @@ ALTER TABLE t26 DROP PRIMARY KEY
 > 修改索引，先删除，在添加新的索引;  <br>
 > - 查询索引;  <br>
 >> - 1.方式:  <br>
+```sql
 SHOW INDEX FROM t25
+```
+
 >> - 2.方式:  <br>
-SHOW INDEXES FROM t25
+```sql
+ SHOW INDEXES FROM t25
+```
+
 >> - 3.方式:  <br>
-SHOW KEYS FROM t25
+```sql
+ SHOW KEYS FROM t25
+```
+
 >> - 4方式:  <br>
-DESC t25
+```sql
+ DESC t25
+```
