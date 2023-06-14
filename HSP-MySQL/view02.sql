@@ -1,7 +1,8 @@
--- 针对 emp ，dept 和 salgrade 张三表.创建一个视图 emp_view03，
+-- 针对 emp ，dept , 和   salgrade 张三表.创建一个视图 emp_view03，
 -- 可以显示雇员编号，雇员名，雇员部门名称和 薪水级别
+
 /*
-	使用三表联合查询，得到结果bb将得到的结果，构建成视图
+	使用三表联合查询，得到结果将得到的结果，构建成视图
 */
 
 CREATE VIEW emp_view03
