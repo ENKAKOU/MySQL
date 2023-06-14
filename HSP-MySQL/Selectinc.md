@@ -1,28 +1,22 @@
 # 查询加强
 
-> ■ 使用where子句 :  
->
-> 查找1992.1.1后入职的员工
->
-> 说明：在mysql中,日期类型可以直接比较, 需要注意格式
+> ■ 使用where子句:  <br>
+> 查找1992.1.1后入职的员工;  <br>
+> 说明：在mysql中,日期类型可以直接比较, 需要注意格式;  <br>
 ```sql
 SELECT * FROM emp
 	WHERE hiredate > "1992-01-01"
 ``` 
 
-> ■ 如何使用like操作符(模糊)
->
->%: 表示0到多个任意字符 _: 表示单个任意字符
->
->显示首字符为S的员工姓名和工资
->
+> ■ 如何使用like操作符(模糊);  <br>
+> %: 表示0到多个任意字符 _: 表示单个任意字符;  <br>
+> 显示首字符为S的员工姓名和工资;  <br>
 ```sql
 SELECT ename, sal FROM emp
 	WHERE ename LIKE "S%"
 ```
 
-> 显示第三个字符为大写O的所有员工的姓名和工资
->
+> 显示第三个字符为大写O的所有员工的姓名和工资;  <br>
 ```sql
 SELECT ename, sal FROM emp
 	WHERE ename LIKE "__O%"
