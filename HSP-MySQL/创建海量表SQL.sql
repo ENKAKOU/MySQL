@@ -1,4 +1,5 @@
 -- 创建测试数据库 tmp
+
 CREATE DATABASE tmp;
 
 CREATE TABLE dept( /*部门表*/
@@ -8,8 +9,7 @@ loc VARCHAR(13) NOT NULL DEFAULT ""
 ) ;
 
 
-
-# 创建表EMP雇员
+-- 创建表EMP雇员
 CREATE TABLE emp
 (empno  MEDIUMINT UNSIGNED  NOT NULL  DEFAULT 0, /*编号*/
 ename VARCHAR(20) NOT NULL DEFAULT "", /*名字*/
@@ -23,7 +23,7 @@ deptno MEDIUMINT UNSIGNED NOT NULL DEFAULT 0 /*部门编号*/
 
 
 
-# 工资级别表
+-- 工资级别表
 CREATE TABLE salgrade
 (
 grade MEDIUMINT UNSIGNED NOT NULL DEFAULT 0,
@@ -33,7 +33,7 @@ hisal DECIMAL(17,2)  NOT NULL
 
 
 
-# 测试数据
+-- 测试数据
 INSERT INTO salgrade VALUES (1,700,1200);
 INSERT INTO salgrade VALUES (2,1201,1400);
 INSERT INTO salgrade VALUES (3,1401,2000);

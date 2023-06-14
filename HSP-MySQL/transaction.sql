@@ -1,16 +1,16 @@
 #  事务的一个重要的概念和具体操作
 
--- 1. 创建一张测试表
+-- 1.创建一张测试表
 CREATE TABLE t27
 	( id INT,
 	  `name` VARCHAR(32));
 
 
--- 2. 开始事务
+-- 2.开始事务
 START TRANSACTION
 
 
--- 3. 设置保存点
+-- 3.设置保存点
 SAVEPOINT a
 
 -- 执行dml 操作
@@ -28,7 +28,7 @@ ROLLBACK TO b
 -- 继续回退 a
 ROLLBACK TO a
 
--- 如果这样, 表示直接回退到事务开始的状态.
+-- 表示直接回退到事务开始的状态.
 ROLLBACK 
 COMMIT
 

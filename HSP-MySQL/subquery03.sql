@@ -4,13 +4,11 @@
 -- 用到数据查询的小技巧，把一个子查询当作一个临时表使用
 
 -- 1.先得到每个部门的 部门号和 对应的平均工资
-
 SELECT deptno, AVG(sal) AS avg_sal
 	FROM emp GROUP BY deptno
 
 
 -- 2.把上面的结果当做子查询, 和 emp 进行多表查询
---    
 SELECT ename, sal, temp.avg_sal, emp.deptno
 	FROM emp, (
 		SELECT deptno, AVG(sal) AS avg_sal
