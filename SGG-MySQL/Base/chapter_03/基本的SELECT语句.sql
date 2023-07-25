@@ -3,11 +3,8 @@
 #1. SQL的分类
 /*
 DDL:数据定义语言。CREATE \ ALTER \ DROP \ RENAME \ TRUNCATE
-
 DML:数据操作语言。INSERT \ DELETE \ UPDATE \ SELECT
-
 DCL:数据控制语言。COMMIT \ ROLLBACK \ SAVEPOINT \ GRANT \ REVOKE
-
 */
 
 /*
@@ -106,7 +103,6 @@ SELECT employee_id,salary "月工资",salary * (1 + IFNULL(commission_pct,0)) * 
 FROM `employees`;
 
 #9. 着重号 ``
-
 SELECT * FROM `order`;
 
 #10. 查询常数
@@ -114,11 +110,8 @@ SELECT '尚硅谷',123,employee_id,last_name
 FROM employees;
 
 #11.显示表结构
-
 DESCRIBE employees; #显示了表中字段的详细信息
-
 DESC employees;
-
 DESC departments;
 
 #12.过滤数据
