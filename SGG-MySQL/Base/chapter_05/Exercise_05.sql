@@ -1,5 +1,4 @@
 #1. 查询员工的姓名和部门号和年薪, 按年薪降序, 按姓名升序显示
-
   SELECT last_name,department_id,salary * 12 annual_salary
   FROM employees
   ORDER BY annual_salary DESC,last_name ASC;
