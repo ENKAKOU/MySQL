@@ -11,7 +11,7 @@
 # 3.将员工的姓名按首字母排序, 并写出姓名的长度(length)
   SELECT last_name,LENGTH(last_name) "name_length"
   FROM employees
-#order by last_name asc;
+  #order by last_name asc;
   ORDER BY name_length ASC;
 
 
