@@ -1,14 +1,17 @@
 #第03章_基本的SELECT语句
 
 #1. SQL的分类
-/*
-DDL:数据定义语言。CREATE \ ALTER \ DROP \ RENAME \ TRUNCATE
-DML:数据操作语言。INSERT \ DELETE \ UPDATE \ SELECT
-DCL:数据控制语言。COMMIT \ ROLLBACK \ SAVEPOINT \ GRANT \ REVOKE
-*/
 
 /*
+DDL:数据定义语言: CREATE \ ALTER \ DROP \ RENAME \ TRUNCATE
+DML:数据操作语言:  \ DELETE \ UPDATE \ SELECT
+DCL:数据控制语言: COMMIT \ ROLLBACK \ SAVEPOINT \ GRANT \ REVOKE
+*/
+
+
 2.1 SQL的规则 ----必须要遵守
+
+/*
 - SQL 可以写在一行或者多行。为了提高可读性，各子句分行写，必要时使用缩进
 - 每条命令以 ; 或 \g 或 \G 结束
 - 关键字不能被缩写也不能分行
@@ -27,8 +30,9 @@ DCL:数据控制语言。COMMIT \ ROLLBACK \ SAVEPOINT \ GRANT \ REVOKE
   - 数据库名、表名、表别名、字段名、字段别名等都小写
   - SQL 关键字、函数名、绑定变量等都大写
 
-3. MySQL的三种注释的方式
 */
+
+3. MySQL的三种注释的方式
 
 USE dbtest2;
 
@@ -41,19 +45,20 @@ USE dbtest2;
   INSERT INTO emp
   VALUES(1003,'Jerry');
 
-
 # SELECT * FROM emp\G
-
 SHOW CREATE TABLE emp\g
 
-/*
+
 4. 导入现有的数据表、表的数据。
+
+/*
 方式1：source 文件的全路径名
 举例：source d:\atguigudb.sql;
 
 方式2：基于具体的图形化界面的工具可以导入数据
 比如：SQLyog中 选择 “工具” -- “执行sql脚本” -- 选中xxx.sql即可。
 */
+
 
 #5. 最基本的SELECT语句: SELECT 字段1,字段2,... FROM 表名
   SELECT 1 + 1,3 * 2;
@@ -74,6 +79,7 @@ SHOW CREATE TABLE emp\g
   SELECT employee_id emp_id,last_name AS lname,department_id "部门id",salary * 12 AS "annual sal"
   FROM employees;
 
+
 # 7. 去除重复行
 #查询员工表中一共有哪些部门id呢?
 #错误的:没有去重的情况
@@ -92,9 +98,10 @@ SHOW CREATE TABLE emp\g
   SELECT DISTINCT department_id,salary
   FROM employees;
 
+
 #8. 空值参与运算
-# 1. 空值: null
-# 2. null不等同于0, '', 'null'
+  # 1. 空值: null
+  # 2. null不等同于0, '', 'null'
   SELECT * FROM employees;
 
 #3. 空值参与运算: 结果一定也为空
@@ -105,17 +112,21 @@ SHOW CREATE TABLE emp\g
   SELECT employee_id,salary "月工资",salary * (1 + IFNULL(commission_pct,0)) * 12 "年工资",commission_pct
   FROM `employees`;
 
+
 #9. 着重号 ``
 SELECT * FROM `order`;
+
 
 #10. 查询常数
   SELECT '尚硅谷',123,employee_id,last_name
   FROM employees;
 
+
 #11.显示表结构
   DESCRIBE employees; #显示了表中字段的详细信息
   DESC employees;
   DESC departments;
+
 
 #12.过滤数据
 
