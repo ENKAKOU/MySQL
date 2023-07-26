@@ -42,7 +42,6 @@
 
   #查询出2889条记录
 
-
   SELECT *
   FROM employees;  #107条记录
 
@@ -54,7 +53,6 @@
 
 
 #3. 多表查询的正确方式: 需要有连接条件
-
   SELECT employee_id,department_name
   FROM employees,departments
   #两个表的连接条件
@@ -127,7 +125,6 @@
 
 
   #7.3 内连接  vs  外连接
-
 # 内连接: 合并具有同一列的两个以上的表的行, 结果集中不包含一个表与另一个表不匹配的行
   SELECT employee_id,department_name
   FROM employees e,departments d
