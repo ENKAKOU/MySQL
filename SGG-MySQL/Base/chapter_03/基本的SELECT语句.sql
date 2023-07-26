@@ -40,7 +40,7 @@ USE dbtest2;
   SELECT * FROM emp;
 
   INSERT INTO emp
-  VALUES(1002,'Tom'); #字符串,日期时间类型的变量需要使用一对''表示
+  VALUES(1002,'Tom');          #字符串,日期时间类型的变量需要使用一对''表示
 
   INSERT INTO emp
   VALUES(1003,'Jerry');
@@ -74,14 +74,16 @@ SHOW CREATE TABLE emp\g
 
 
 #6. 列的别名
-# as:全称: alias(别名),可以省略
-# 列的别名可以使用一对""引起来,不要使用''.
+#   as:全称: alias(别名),可以省略
+#   列的别名可以使用一对""引起来,不要使用''
+
   SELECT employee_id emp_id,last_name AS lname,department_id "部门id",salary * 12 AS "annual sal"
   FROM employees;
 
 
 # 7. 去除重复行
-#查询员工表中一共有哪些部门id呢?
+#    查询员工表中一共有哪些部门id呢?
+
 #错误的:没有去重的情况
   SELECT department_id
   FROM employees;
