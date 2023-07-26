@@ -89,13 +89,13 @@
   #limit 0,10;
   LIMIT 10;
 
-#练习: 表里有107条数据, 我们只想要显示第 32, 33 条数据怎么办呢.
+#练习: 表里有107条数据, 我们只想要显示第 32, 33 条数据怎么办呢
   SELECT employee_id,last_name
   FROM employees
   LIMIT 31,2;
 
   #2.3 MySQL8.0新特性: LIMIT ... OFFSET ...
-#练习: 表里有107条数据, 我们只想要显示第 32, 33 条数据怎么办呢.
+#练习: 表里有107条数据, 我们只想要显示第 32, 33 条数据怎么办呢
   SELECT employee_id,last_name
   FROM employees
   LIMIT 2 OFFSET 31;
@@ -107,5 +107,5 @@
   #limit 0,1
   LIMIT 1;
 
-  #2.4 LIMIT 可以使用在MySQL, PGSQL, MariaDB, SQLite 等数据库中使用, 表示分页.
+  #2.4 LIMIT 可以使用在MySQL, PGSQL, MariaDB, SQLite 等数据库中使用, 表示分页
   #不能使用在SQL Server, DB2, Oracle.
