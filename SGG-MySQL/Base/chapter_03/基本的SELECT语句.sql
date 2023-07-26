@@ -49,7 +49,7 @@ USE dbtest2;
 SHOW CREATE TABLE emp\g
 
 
-4. 导入现有的数据表、表的数据。
+4. 导入现有的数据表,表的数据.
 
 /*
 方式1：source 文件的全路径名
