@@ -64,7 +64,7 @@ SHOW CREATE TABLE emp\g
   SELECT 1 + 1,3 * 2;
 
   SELECT 1 + 1,3 * 2
-  FROM DUAL; #dual:伪表
+  FROM DUAL;           # dual:伪表
 
 # *:表中的所有的字段(或列)
   SELECT * FROM employees;
