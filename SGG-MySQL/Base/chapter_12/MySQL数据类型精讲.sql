@@ -417,7 +417,6 @@ FROM test_text; #10
 
 
 #8. ENUM类型
-
 CREATE TABLE test_enum(
 season ENUM('春','夏','秋','冬','unknow')
 );
