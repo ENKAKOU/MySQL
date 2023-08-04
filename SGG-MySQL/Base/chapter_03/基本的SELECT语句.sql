@@ -106,7 +106,7 @@ SHOW CREATE TABLE emp\g
   # 2. null不等同于0, '', 'null'
   SELECT * FROM employees;
 
-#3. 空值参与运算: 结果一定也为空
+  #3. 空值参与运算: 结果一定也为空
   SELECT employee_id,salary "月工资",salary * (1 + commission_pct) * 12 "年工资",commission_pct
   FROM employees;
 
