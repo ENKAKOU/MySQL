@@ -29,6 +29,7 @@ SELECT last_name, salary, commission_pct
 FROM employees
 WHERE commission_pct IS NOT NULL;
 
+
 # 5.选择员工姓名的第三个字母是a的员工姓名
 SELECT last_name
 FROM employees
