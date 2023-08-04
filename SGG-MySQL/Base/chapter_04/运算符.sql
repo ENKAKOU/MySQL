@@ -33,7 +33,8 @@
 
 #2. 比较运算符
 
-  #2.1 =  <=>  <> !=  <  <=  >  >=
+  #2.1 =(等于), <=>(安全等于), <> / !=(不等于), <(小于), <=(小于等于),
+       >(大于), >=(大于等于)
 
 # = 的使用
   SELECT 1 = 2,1 != 2,1 = '1',1 = 'a',0 = 'a'     #字符串存在隐式转换. 如果转换数值不成功, 则看做0
@@ -69,6 +70,7 @@
 
 
   #2.2
+
   #1.IS NULL\ IS NOT NULL \ ISNULL
 
 #练习: 查询表中commission_pct为null的数据有哪些
@@ -91,7 +93,7 @@
   WHERE NOT commission_pct <=> NULL;
 
 
-  #2 LEAST() \ GREATEST
+  #2 LEAST(最小) \ GREATEST(最大)
   SELECT LEAST('g','b','t','m'),GREATEST('g','b','t','m')
   FROM DUAL;
 
