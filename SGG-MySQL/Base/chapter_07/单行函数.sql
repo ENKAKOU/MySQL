@@ -270,5 +270,3 @@ FROM DUAL;
 
   SELECT CHARSET('atguigu'),CHARSET(CONVERT('atguigu' USING 'gbk'))
   FROM DUAL;
-
-
