@@ -101,7 +101,7 @@
   FROM employees;
 
 
-  #3 BETWEEN 条件下界1 AND 条件上界2(查询条件1和条件2范围内的数据, 包含边界)
+  #3 BETWEEN 条件下界1 AND 条件上界2    (查询条件1和条件2范围内的数据, 包含边界)
 
 #查询工资在6000 到 8000的员工信息
   SELECT employee_id,last_name,salary
@@ -119,8 +119,7 @@
   WHERE salary NOT BETWEEN 6000 AND 8000;
 
 
-  #4 in (set)\ not in (set)
-
+  #4 in (set)-属于运算符 \ not in (set)-不属于运算符
 
 #练习: 查询部门为10,20,30部门的员工信息
   SELECT last_name,salary,department_id
@@ -133,9 +132,9 @@
   FROM employees
   WHERE salary NOT IN (6000,7000,8000);
 
+
   #5 LIKE :模糊查询
 # % : 代表不确定个数的字符 (0个, 1个, 或多个)
-
 
 #练习: 查询last_name中包含字符'a'的员工信息
   SELECT last_name
