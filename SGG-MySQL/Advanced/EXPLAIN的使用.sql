@@ -9,6 +9,7 @@ DESCRIBE DELETE FROM student_info WHERE id = 2;
 #
 USE atguigudb1;
 
+
 #创建表
 CREATE TABLE s1 (
     id INT AUTO_INCREMENT,
@@ -43,7 +44,8 @@ CREATE TABLE s2 (
     INDEX idx_key_part(key_part1, key_part2, key_part3)
 ) ENGINE=INNODB CHARSET=utf8;
 
-#创建存储函数：
+
+#创建存储函数:
 DELIMITER //
 CREATE FUNCTION rand_string1(n INT)
 	RETURNS VARCHAR(255) #该函数会返回一个字符串
@@ -61,7 +63,8 @@ DELIMITER ;
 
 SET GLOBAL log_bin_trust_function_creators=1;
 
-#创建存储过程：
+
+#创建存储过程:
 DELIMITER //
 CREATE PROCEDURE insert_s1 (IN min_num INT (10),IN max_num INT (10))
 BEGIN
@@ -106,6 +109,7 @@ BEGIN
 	COMMIT;
 END //
 DELIMITER ;
+
 
 #调用存储过程
 CALL insert_s1(10001,10000);
